@@ -5,7 +5,8 @@ from list_palabras import palabras
 from ahorcado_diagramas import vidas_diccionario_visual
 
 def obtener_palabra_valida(lista_palabras):
-    palabra = random.choice(lista_palabras)
+    #Seleccionar una palabra al azar 
+    palabra = random.choice(palabras)
 
     while "_" in palabra or " " in palabra:
         palabra = random.choice(palabras)
